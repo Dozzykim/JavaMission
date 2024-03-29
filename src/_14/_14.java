@@ -43,6 +43,12 @@ public class _14 {
             while (token.hasMoreTokens()) {
                 String cookie = token.nextToken();
                 System.out.print(cookie + " ");
+
+                StringTokenizer token2 = new StringTokenizer(cookie, "/");
+                while (token2.hasMoreTokens()) {
+                    String cookie2 = token2.nextToken();
+                    System.out.print(cookie2 + ".");
+                }
             }
             System.out.println();
             
